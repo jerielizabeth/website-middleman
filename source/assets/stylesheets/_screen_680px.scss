@@ -1,0 +1,39 @@
+@import "susy";
+@import "base";
+@import "compass/typography/links/link-colors";
+
+@media screen and (max-width : 680px){
+    #wrap {
+        @include container(6);
+        /*@include susy-grid-background;*/
+
+        /*--- Layout Styles --*/
+        #title {@include span-columns(6 omega,6); padding: .5em .5em 0 1em;}
+        #primary-nav {@include span-columns(4 omega, 6); padding:.5em 0 .5em;}
+        #upper-nav {@include span-columns (5 omega, 6);padding-top:.5em;}
+        #blurb{padding:.5em 1em;}
+        #main{@include span-columns(6,6); padding-top:.5em;}
+        aside {@include span-columns(6,6); padding-top:.5em;}
+        .callout{@include span-columns(6,6);text-align:center;}
+        #copyright{@include span-columns(4,6);}
+        #social{@include span-columns(2 omega,6);padding:1em 0;}
+        footer{padding:2em .5em;}
+
+        /*--- Hidden Styles --*/
+        .hidden {
+            display:none;
+        }
+        /*--- Styles --*/
+        #title h1 {
+            margin:.5em 0 .5em .5em;
+            font-size:3em;
+        }
+        .block li {
+            float:left;
+            padding-right:.5em;
+        }
+        #upper-nav .important {
+            padding-right:1.5em;
+        }
+    } 
+}

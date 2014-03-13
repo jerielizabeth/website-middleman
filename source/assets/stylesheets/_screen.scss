@@ -2,6 +2,7 @@
 @import "base";
 @import "compass/typography/links/link-colors";
 
+
 /*--- Layout Styles --*/
 #wrap {
     @include container;
@@ -43,6 +44,7 @@ body {
     background-size: cover;
     background-position: center;
     padding-top:1.5em;
+    a {@include link-colors(lighten($accent-second,10%), lighten($accent-main,10%), lighten($accent-main, 20%), lighten($accent-second, 10%));}  
 }
 #title h1 {
     font-family: $font-title;

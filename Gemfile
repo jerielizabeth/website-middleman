@@ -14,3 +14,6 @@ gem "susy", "~> 1.0.9"
 
 gem "font-awesome-sass", "~> 4.0.3.1"
 gem "nokogiri", "~> 1.6.1"
+
+# For Github deploy
+gem "middleman-deploy", "~> 0.2.3"

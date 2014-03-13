@@ -19,3 +19,6 @@ vender/bundle/
 
 # Ignore .DS_store file
 .DS_Store
+
+# Ignore cache
+.cache/*
