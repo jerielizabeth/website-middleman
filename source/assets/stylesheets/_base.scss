@@ -1,0 +1,29 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "susy";
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+$total-columns  : 12;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$show-grid-backgrounds  : true;
+
+
+// ---------------------------------------------------------------------------
+// Typography
+$font-title:'Great Vibes', cursive;
+$font-header:'Forum', Georgia, serif;
+$font-main: 'Open Sans', 'Helvetica-Neue', Helvetica, sans-serif;
+$font-size-main: 14px;
+
+
+// ---------------------------------------------------------------------------
+// Color
+$text-color: #444;
+$text-index: #C2C2BA;
+$accent-main:#1E628D;
+$accent-second:#DD8B24;

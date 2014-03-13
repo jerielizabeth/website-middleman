@@ -1,0 +1,29 @@
+---
+Template: default
+---
+<h1>Digital</h1>
+    <p>
+    I am interested in the ways digital technology changes how humanists model the world, the types of questions that can be asked regarding the human experience, and our collective understanding of what it means to be human. I see these as the central questions for "Digital Humanities" as a field of study, questions that we are only beginning to unpack and explore. 
+    </p>
+    <p>
+    As a case study for exploring these issues, I am using text-mining and network analysis in my dissertation project to study the publications produced by health reformers and Seventh-day Adventists. 
+    </p>
+    <p>
+    My technical skills include:
+        <ul class="display-list">
+            <li>HTML and CSS</li>
+            <li>Python for scripting</li>
+            <li>Git</li>
+            <li>Bash</li>
+            <li>Cursory exposure to Ruby, PHP, and JavaScript</li>
+        </ul>   
+
+<h2>Recent Digital History Posts</h2>
+<ul>
+  <% blog.tags["digital"][0...5].each do |article| %>
+    <li>
+      <a href="<%= article.url %>"><%= article.title %></a>, <span><%= article.date.strftime('%b %e') %></span>
+    </li>
+  <% end %>
+</ul>
+
