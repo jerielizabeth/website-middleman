@@ -2,7 +2,7 @@
 @import "base";
 @import "compass/typography/links/link-colors";
 
-@media screen and (max-width : 680px){
+@media screen and (max-width: 680px){
     #wrap {
         @include container(6);
         /*@include susy-grid-background;*/

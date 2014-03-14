@@ -16,6 +16,8 @@
     #digital{@include span-columns(4,12);text-align:center;}
     #teaching{@include span-columns(4 omega,12);text-align:center;}
     #copyright{@include span-columns(10,12);}
+    #main {@include span-columns(8,12);}
+    aside {@include span-columns(3 omega,12);}
     #social{@include span-columns(2 omega,12);padding:1em 0;}
     footer{padding:1em 0;}
 }
@@ -174,7 +176,6 @@ a{
 }
 /*--- Blog Styles --*/
 #main {
-    @include span-columns(8,12);
     h1 {
         margin-bottom: .5em;
         font-variant: small-caps;
@@ -201,7 +202,6 @@ a{
     }
 }
 aside {
-    @include span-columns(3 omega,12);
     h2 {
         padding:0;
     }

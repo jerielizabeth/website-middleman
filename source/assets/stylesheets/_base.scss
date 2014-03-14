@@ -5,16 +5,16 @@
 
 // ---------------------------------------------------------------------------
 // Basic Grid
-$total-columns  : 12;
+$total-columns  : 4;
 $column-width   : 4em;
 $gutter-width   : 1em;
-$grid-padding   : $gutter-width;
+$grid-padding   : .5em;
 
 $show-grid-backgrounds  : true;
 
 // ---------------------------------------------------------------------------
 // BreakPoints
-$breakpoint-mobile : 480px 6;
+
 
 // ---------------------------------------------------------------------------
 // Typography
@@ -31,3 +31,4 @@ $text-index: #C2C2BA;
 $accent-main:#1E628D;
 $accent-second:#DD8B24;
 
+$links-main: (lighten($accent-main,10%), $accent-second, lighten($accent-second, 10%), lighten($accent-main, 20%));
