@@ -1,19 +1,21 @@
 ---
 Template: default
 ---
-<h1>Research</h1>
+<h1>Religious History</h1>
     <p>
     I am interested in the development of American Protestantism and in the study of religion as one cultural system among many that shape the lives and experiences of individual actors. These questions encourage me to look beyond both denominational histories and histories of religious leaders and toward more cultural approaches to the study of religion. They also lend themselves to larger scale projects which require digital methods for exploring patterns over time and the interactions of complex systems.
     </p>
     <p>
     For my dissertation, I am looking at the intersection of Seventh-day Adventism, health reform movements, and changing gender constructions during the 19th century. The development of Seventh-day Adventism reveals many of the conflicting impulses and ideologies that shaped the lives of nineteenth-century Americans. In combining progressive concerns about women’s health and dress with more conservative notions of domesticity and motherhood; linking salvation to diet, health, and reform but rejecting the predominant Protestant goal of creating heaven on earth; and adapting new medical technologies while insisting on divine guidance in the formation of their practices, Seventh-day Adventism complicates many of the standard narratives of American culture and religion’s place therein. Because of its situation at the intersection of many different religious and cultural traditions of thought, Seventh-day Adventism offers a unique opportunity to investigate the mutually constructing relationship between the religious tenets of a particular community, the constructions and uses of gender, race, and class to designate and contest claims of authority, the links between spiritual and physical fitness, and broader conversations in nineteenth-century America about health and social organization.
     </p>
-<h2>Research Posts</h2>
+<div id="recent_posts">
+    <h2>Recent Posts</h2>
 
-<ul>
-  <% blog.tags["research"][0...5].each_with_index do |article| %>
-    <li>
-      <a href="<%= article.url %>"><%= article.title %></a>, <span><%= article.date.strftime('%b %e') %></span>
-    </li>
-  <% end %>
-</ul>
+    <ul id="topic_posts">
+      <% blog.tags["research"][0...5].each_with_index do |article| %>
+        <li>
+          <a href="<%= article.url %>"><%= article.title %></a>, <span><%= article.date.strftime('%b %e') %></span>
+        </li>
+      <% end %>
+    </ul>
+</div>

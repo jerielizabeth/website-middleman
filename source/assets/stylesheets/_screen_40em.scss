@@ -1,0 +1,19 @@
+@import "susy";
+@import "base";
+@import "compass/typography/links/link-colors";
+
+#secondary-nav .callout {
+	width:100% !important;
+}
+
+article {
+	width:100% !important;
+}
+aside {
+	width: 100% !important;
+	background-color:$accent-main;
+	color:lighten($text-index, 20%) !important;
+	section{
+		padding:.5em 1em;
+	}
+}

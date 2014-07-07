@@ -5,10 +5,10 @@
 
 // ---------------------------------------------------------------------------
 // Basic Grid
-$total-columns  : 4;
+$total-columns  : 12;
 $column-width   : 4em;
 $gutter-width   : 1em;
-$grid-padding   : .5em;
+$grid-padding   : 1em;
 
 $show-grid-backgrounds  : true;
 
@@ -18,7 +18,7 @@ $show-grid-backgrounds  : true;
 
 // ---------------------------------------------------------------------------
 // Typography
-$font-title:'Great Vibes', cursive;
+$font-title:'Coda', cursive;
 $font-header:'Forum', Georgia, serif;
 $font-main: 'Open Sans', 'Helvetica-Neue', Helvetica, sans-serif;
 $font-size-main: 16px;
@@ -27,7 +27,7 @@ $font-size-main: 16px;
 // ---------------------------------------------------------------------------
 // Color
 $text-color: #444;
-$text-index: #C2C2BA;
+$text-index: #888;
 $accent-main:#1E628D;
 $accent-second:#DD8B24;
 

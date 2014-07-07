@@ -1,15 +1,17 @@
 <%= partial "head" %>
   <body>
    <div id="wrap">
-      <header id="image">
+      <header id="head">
         <%= partial "header" %>
       </header>
-      <div id="main" role="main">
+      <main>
+        <article>
         <%= yield %>
-      </div>
-      <aside>
-        <%= partial "sidebar" %>
-      </aside>
+        </article>
+        <aside>
+          <%= partial "sidebar" %>
+        </aside>
+      </main>
       <footer>
         <%= partial "footer" %>
       </footer>

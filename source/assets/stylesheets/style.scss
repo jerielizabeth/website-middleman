@@ -3,10 +3,15 @@
 @import "compass/typography/links/link-colors";
 
 /* -------------------------------------------------------------------------*/
-/* Screen */
-@import "mobile-first";
+/* Screen - Mobile */
+@media screen and (max-width:40em){	
+	@import "screen_40em";
+}
 
 /* -------------------------------------------------------------------------*/
-/* Screen - Mobile 
-@import "screen_680px";*/
+/* Screen */
+@media screen {
+	@import "screen_new";
+}
+
 

@@ -16,14 +16,15 @@ Template: default
             <li>Git</li>
             <li>Bash</li>
             <li>Cursory exposure to Ruby, PHP, and JavaScript</li>
-        </ul>   
-
-<h2>Digital History Posts</h2>
-<ul>
-  <% blog.tags["digital"][0...5].each do |article| %>
-    <li>
-      <a href="<%= article.url %>"><%= article.title %></a>, <span><%= article.date.strftime('%b %e') %></span>
-    </li>
-  <% end %>
-</ul>
-
+        </ul> 
+    </p>  
+<div id="recent_posts">
+    <h2>Recent Digital History Posts</h2>
+    <ul id="topic_posts">
+      <% blog.tags["digital"][0...5].each do |article| %>
+        <li>
+          <a href="<%= article.url %>"><%= article.title %></a>, <span><%= article.date.strftime('%b %e') %></span>
+        </li>
+      <% end %>
+    </ul>
+</div>

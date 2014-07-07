@@ -8,13 +8,13 @@ Template: default
     <p>
         The second, related to the study of digital history, is how to teach and deploy computational thinking within a humanities context, when the impulses of these modes of inquiry can often be at cross purposes. Rather than the acquisition of skills for using digital technology, I approach digital history as a way to conceptualize problems and model understandings, a way that requires technical skill but is not reducible to those skills.
     </p>
-
-<h2>Teaching Posts</h2>
-<ul>
-  <% blog.tags["teaching"][0...5].each do |article| %>
-    <li>
-      <a href="<%= article.url %>"><%= article.title %></a>, <span><%= article.date.strftime('%b %e') %></span>
-    </li>
-  <% end %>
-</ul>
-
+<div id="recent_posts">
+    <h2>Recent Posts about Teaching</h2>
+    <ul id="topic_posts">
+      <% blog.tags["teaching"][0...5].each do |article| %>
+        <li>
+          <a href="<%= article.url %>"><%= article.title %></a>, <span><%= article.date.strftime('%b %e') %></span>
+        </li>
+      <% end %>
+    </ul>
+</div>

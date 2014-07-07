@@ -1,0 +1,281 @@
+@import "susy";
+@import "base";
+@import "compass/typography/links/link-colors";
+
+/*--- Layout Grid --*/
+#wrap {
+    @include container;
+/*    @include susy-grid-background;
+*/    background-color: white;
+}
+
+/*--- Base Styles --*/
+body {
+    font-family:$font-main;
+    font-size:$font-size-main;
+    line-height: $font-size-main*1.5;
+    color:$text-color;
+    margin:0;
+    background: url(../images/wood_02.jpg) no-repeat center center fixed;
+    background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover; 
+    a {@include link-colors($accent-second, $accent-main, lighten($accent-main, 20%), lighten($accent-second, 10%));}  
+}
+header, 
+main,
+footer {
+    @include span-columns (11, 12);
+    padding:1em 3.5% .5em 3.5%;
+}
+
+#{headings()} {
+    font-family: $font-header;
+    line-height: 1.2em;
+}
+h1 {
+    font-size:($font-size-main)*2.5;
+    margin:.5em 0;
+}
+h2 {
+    clear:both;
+    margin:.5em 0;
+    font-size:($font-size-main)*2;
+}
+h3 {
+    font-family:$font-main;
+    font-size: ($font-size-main)*1.5;
+}
+aside h3 {
+    padding:.5em 0;
+    font-family:$font-header;
+}
+
+/*--- Link Styles --*/
+a{
+    @include link-colors(lighten($accent-main,10%), $accent-second, lighten($accent-second, 10%), lighten($accent-main, 20%));
+    text-decoration: none;
+    &:hover{text-decoration:underline;}
+}
+
+/*--- Header Styles --*/
+#title {
+    line-height: 2.5em;
+    h1 {
+        font-family: $font-title;
+        font-size:3em; 
+        margin:.5em 0 0 0;
+        a {
+            text-decoration: none;
+            display:block;
+        }
+    }
+    h2 {
+        text-align: right;
+        padding:0;
+        margin: .5em 0;
+    }
+}
+
+/*--- Navigation Styles --*/
+
+/* Mobile Navigation */
+/*@import "mobile-nav";*/
+
+.nav{
+    font-family: $font-header;   
+    ul{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        li{
+            width:auto;
+            float:left;
+        }
+        a{
+            text-decoration: none;
+            &:hover {
+                text-decoration:underline;
+            }
+        }
+    }
+}
+.primary-nav {
+    @extend .nav;
+    font-family:$font-header;
+    font-size:1.25em;
+    width: 100%; 
+    overflow: auto;
+    border-top:1px solid $text-index;
+    border-bottom:5px double $text-index;
+    ul {
+        list-style-type: none;
+        float:left;
+        li{
+            float:left;
+            display: block;
+            padding: .5em 1em .5em .5em;
+
+            a:before {
+                content:"\2756";
+            }
+        }
+    }
+}
+#secondary-nav {
+    .callout {
+        width:30%;
+        float:left;
+        padding:2% 1.5%;
+        h2 {
+            padding:0;
+            margin-bottom:0;
+            text-align: center;
+        }
+        p {
+            font-family:$font-main;
+            font-size:$font-size-main;
+            text-align: center;
+        }
+    }
+}
+
+#social {
+    font-size: 1.5em;
+    ul li {
+        padding-left:.75em;
+    }
+}
+/*--- Index Styles --*/
+
+#blurb {
+    text-align: center;
+/*    font-size:$font-size-main*1.25;
+    line-height: $font-size-main*2;
+*/}
+.entry {
+    clear:both;
+    padding:.5em 0;
+    overflow:auto;
+}
+.portfolio {
+    border:1px solid $text-index;
+    float:left;
+    width:90%;
+}
+.title {
+    float:left;
+    width:100%;
+    font-size: 1.25em;
+    h4{margin-bottom:0;}
+    p{
+        margin-top:0;
+        font-size: $font-size-main;
+    }
+}
+.tagline {
+    font-size:.9em;
+}
+/*--- Blog Styles --*/
+
+article {
+    width:70%;
+    float:left;
+    margin-right:5%;
+    h1 {
+        margin-bottom: .5em;
+        font-variant: small-caps;
+    }
+    h2 {
+        padding-bottom:0;
+    }
+    ul {
+        list-style-type: none;
+        padding-left:0;
+        li {
+            padding:.5em 0;
+        }
+    }
+    .text {
+        padding-top:.5em;
+    }
+    .display-list{
+        list-style-type:square;
+        margin-left:2em;
+        li{
+            padding:.25em;
+        }
+    }
+
+    section{
+        width:100%;
+        padding:.5em 0 1em;
+    }
+    #next {
+        clear:both;
+        padding-top:1em;
+    }
+    #recent_posts{
+        padding-top:1em;
+        h2 {
+            padding-bottom:.5em;
+            border-bottom: 1px solid $text-index;
+        }
+        ul {
+            padding-left:1em;
+            li{
+                a:before {
+                    content:"\2756";
+                }
+            }
+        }
+    }
+    .cse .gsc-control-cse, .gsc-control-cse{
+        padding:0;
+    }
+}
+aside {
+    width:23%;
+    float:right;
+    color: $text-index;
+    a {@include link-colors(lighten($accent-second,10%), lighten($accent-main,20%), lighten($accent-main, 20%), lighten($accent-second, 10%));} 
+    h2 {
+        padding:0;
+    }
+    h3 {
+        padding:0;
+    }
+    ul{
+        list-style-type: none;
+        padding:0;
+        li {
+            padding-bottom:.5em;
+
+            a:before {
+                content:"\2756";
+            }
+        }
+    }
+}
+
+/*--- Footer Styles --*/
+footer {
+    clear:both;
+    border-top:5px double $text-index;
+    #copyright{
+        width:50%;
+        float:left;
+        p{
+            margin:0;
+        }
+    }
+    #social {
+        width:50%;
+        float:left;
+        ul{
+            float:right;
+        }
+    }
+}
+
