@@ -1,8 +1,8 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   site_url = "http://jeriwieringa.com/blog/"
-  xml.title "Jeri Wieringa"
-  xml.subtitle "American Religious Digital Historian"
+  xml.title "From Data to Scholarship"
+  xml.subtitle "Digital Experiments in Religious History"
   xml.id URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"
